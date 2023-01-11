@@ -575,6 +575,7 @@
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.Advertisements.DevX.Editor.dll (+2 others)","enqueuedNodeIndex":418,"enqueueingNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.dll","enqueueingNodeIndex":579}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.Advertisements.DevX.Editor.AdditionalFile.txt","enqueuedNodeIndex":416,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.Advertisements.DevX.Editor.dll (+2 others)","enqueueingNodeIndex":418}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/200b0aE.dag/UnityEngine.Advertisements.DevX.Editor.rsp","enqueuedNodeIndex":417,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/UnityEngine.Advertisements.DevX.Editor.dll (+2 others)","enqueueingNodeIndex":418}
+<<<<<<< HEAD
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.pdb","enqueuedNodeIndex":580,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll","enqueuedNodeIndex":581,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.pdb","enqueuedNodeIndex":582,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
@@ -596,3 +597,15 @@
 {"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb","index":588}
 {"msg":"noderesult","processed_node_count":585,"number_of_nodes_ever_queued":588,"annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll","index":587,"exitcode":0,"outputfile":"Library/ScriptAssemblies/Assembly-CSharp.dll"}
 {"msg":"noderesult","processed_node_count":586,"number_of_nodes_ever_queued":588,"annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb","index":588,"exitcode":0,"outputfile":"Library/ScriptAssemblies/Assembly-CSharp.pdb"}
+=======
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Advertisements.DevX.Editor.pdb","enqueuedNodeIndex":558,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.dll","enqueuedNodeIndex":559,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Purchasing.Stores.pdb","enqueuedNodeIndex":560,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll","enqueuedNodeIndex":561,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.pdb","enqueuedNodeIndex":562,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEditor.Purchasing.dll","enqueuedNodeIndex":563,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.Purchasing.dll (+2 others)","enqueuedNodeIndex":439,"enqueueingNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEditor.Purchasing.dll","enqueueingNodeIndex":563}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.Purchasing.AdditionalFile.txt","enqueuedNodeIndex":437,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.Purchasing.dll (+2 others)","enqueueingNodeIndex":439}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/200b0aE.dag/UnityEditor.Purchasing.rsp","enqueuedNodeIndex":438,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/200b0aE.dag/UnityEditor.Purchasing.dll (+2 others)","enqueueingNodeIndex":439}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/UnityEditor.Purchasing.pdb","enqueuedNodeIndex":564,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
+>>>>>>> main
