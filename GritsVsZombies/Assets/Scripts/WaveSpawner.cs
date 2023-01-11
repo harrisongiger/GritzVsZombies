@@ -12,18 +12,35 @@ public class WaveSpawner : MonoBehaviour
 
     private int waitTime;
 
-    private bool running;
+    private int[] waveNums;
+    private int waveCount;
+    private int waveNum;
+
+    private bool running = false;
 
     // Start is called before the first frame update
     void Start() {
         Instantiate(rat, new Vector3(x, y, 0), Quaternion.identity);
+
         waitTime = 3;
+        waveNum = 0;
+        waveCount = 0;
+
+        waveNums = new int[] {3, 4, 5};
     }
 
     // Update is called once per frame
     void Update() {
         if (!running) {
-            StartCoroutine(Loop());
+            if (waveCount <= waveNums[waveNum]) {
+                StartCoroutine(Loop());
+                waitTime = 3;
+            }
+            else {
+                waitTime = 10;
+                waveNum += 1;
+                waveCount = 0;
+            }
         }
     }
 
@@ -32,6 +49,7 @@ public class WaveSpawner : MonoBehaviour
 
         yield return new WaitForSeconds(waitTime);
         Instantiate(rat, new Vector3(x, y, 0), Quaternion.identity);
+        waveCount += 1;
 
         running = false;
     }

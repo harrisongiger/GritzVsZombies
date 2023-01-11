@@ -15,11 +15,6 @@ public class EnemyMove : MonoBehaviour
         moveSpeed = 0.01f;
     }
 
-    // Update is called once per frame
-    void Update() {
-
-    }
-
     void FixedUpdate() {
         this.gameObject.transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
     }
