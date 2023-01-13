@@ -370,6 +370,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
+"Assets/Scripts/EggACont.cs"
+"Assets/Scripts/EggController.cs"
 "Assets/Scripts/EnemyMove.cs"
 "Assets/Scripts/MouseMove.cs"
 "Assets/Scripts/WaveSpawner.cs"

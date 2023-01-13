@@ -1,25 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseMove : MonoBehaviour
 {
-    public GameObject selectedFood;
-
-    void Update() {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-        if (Input.GetMouseButtonDown(0)) {
-            Collider2D targetObject = Physics2D.OverlapPoint(mousePosition);
-
-            if (targetObject) {
-                selectedFood = targetObject.transform.gameObject;
-            }
-        }
-
-        if (Input.GetMouseButtonUp(0) && selectedFood) {
-            selectedFood = null;
-        }
+    void Update()
+    {
+        // Get the current mouse position
+        Vector3 mousePos = Input.mousePosition;
+        
+        // Convert the mouse position from screen space to world space
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        
+        // Set the position of the gameobject to the mouse position
+        this.gameObject.transform.position = new Vector3(worldPos.x, worldPos.y, 0);
     }
-
 }
