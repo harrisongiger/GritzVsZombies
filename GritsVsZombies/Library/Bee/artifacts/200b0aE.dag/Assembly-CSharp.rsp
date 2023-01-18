@@ -373,7 +373,11 @@
 "Assets/Scripts/EggACont.cs"
 "Assets/Scripts/EggController.cs"
 "Assets/Scripts/EnemyMove.cs"
+<<<<<<< HEAD
 "Assets/Scripts/MouseMove.cs"
+=======
+"Assets/Scripts/mapscript.cs"
+>>>>>>> main
 "Assets/Scripts/WaveSpawner.cs"
 -langversion:9.0
 
