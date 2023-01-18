@@ -18,7 +18,7 @@ public class EggACont : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Enemy") {
-            moveSpeed = 0f;
+            Destroy(this.gameObject);
         }
     }
 }
