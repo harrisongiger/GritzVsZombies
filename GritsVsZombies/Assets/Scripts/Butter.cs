@@ -1,21 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Butter : MonoBehaviour
 {
 
     public GameObject butter;
-    public TMP_Text butterText;
+    public TextMeshProUGUI butterText;
 
     private bool running = false;
 
-    private ButterCont butterCont;
+    public static int numButter;
     
     void Start() {
-        butterCont = GetComponent<ButterCont>();
-        butterText = GetComponent<TMP_Text>();
+        butterText = GetComponent<TextMeshProUGUI>();
     }
 
     void Update(){
@@ -23,7 +23,8 @@ public class Butter : MonoBehaviour
             StartCoroutine(Loop());
         }
 
-        //butterText.SetText("Butter:" + ButterCont.numButter);
+        butterText.SetText("Butter:" + numButter);
+        Debug.Log(numButter);
     }
 
     IEnumerator Loop() {

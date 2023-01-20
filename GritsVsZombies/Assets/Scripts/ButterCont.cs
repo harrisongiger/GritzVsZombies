@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class ButterCont : MonoBehaviour
 {
-
-    public int numButter;
-
     void OnMouseDown() {
         Destroy(this.gameObject);
-        numButter += 1;
+        Butter.numButter += 1;
     }
 }

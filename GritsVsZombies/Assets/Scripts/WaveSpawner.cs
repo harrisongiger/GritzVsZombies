@@ -26,7 +26,7 @@ public class WaveSpawner : MonoBehaviour
         waveNum = 0;
         waveCount = 0;
 
-        waveNums = new int[] {3, 4, 5};
+        waveNums = new int[] {1, 4, 5};
     }
 
     // Update is called once per frame

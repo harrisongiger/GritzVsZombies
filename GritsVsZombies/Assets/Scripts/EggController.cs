@@ -7,7 +7,7 @@ public class EggController : MonoBehaviour
 
     public GameObject attack;
 
-    private int waitTime;
+    private float waitTime;
 
     private bool running = false;
 
@@ -18,7 +18,7 @@ public class EggController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        waitTime = 3;
+        waitTime = 0.5f;
         health = 100;
     }
 
