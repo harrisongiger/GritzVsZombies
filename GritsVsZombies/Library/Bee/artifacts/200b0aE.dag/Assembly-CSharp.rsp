@@ -376,6 +376,7 @@
 "Assets/Scripts/EggController.cs"
 "Assets/Scripts/EnemyMove.cs"
 "Assets/Scripts/mapscript.cs"
+"Assets/Scripts/sPotController.cs"
 "Assets/Scripts/WaveSpawner.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

@@ -8,23 +8,18 @@ public class Butter : MonoBehaviour
 {
 
     public GameObject butter;
-    public TextMeshProUGUI butterText;
+    public Text butterText;
 
     private bool running = false;
 
     public static int numButter;
-    
-    void Start() {
-        butterText = GetComponent<TextMeshProUGUI>();
-    }
 
     void Update(){
         if (!running) {
             StartCoroutine(Loop());
         }
 
-        butterText.SetText("Butter:" + numButter);
-        Debug.Log(numButter);
+        butterText.text = "Butter: " + numButter;
     }
 
     IEnumerator Loop() {

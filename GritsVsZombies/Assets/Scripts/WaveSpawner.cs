@@ -20,8 +20,6 @@ public class WaveSpawner : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        Instantiate(rat, new Vector3(x, y, 0), Quaternion.identity);
-
         waitTime = 3;
         waveNum = 0;
         waveCount = 0;

@@ -11,6 +11,9 @@ public class EggController : MonoBehaviour
 
     private bool running = false;
 
+    private bool running2 = false;
+    private bool run = false;
+
     private float x;
     private float y;
 
@@ -18,7 +21,7 @@ public class EggController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
-        waitTime = 0.5f;
+        waitTime = 2f;
         health = 100;
     }
 
@@ -29,6 +32,16 @@ public class EggController : MonoBehaviour
 
         if (!running) {
             StartCoroutine(Loop());
+        }
+
+        if (run) {
+            if (!running2) {
+                StartCoroutine(Loop2());
+            }
+        }
+
+        if (health <= 0) {
+            Destroy(this.gameObject);
         }
     }
 
@@ -44,6 +57,22 @@ public class EggController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Enemy") {
             health -= 10;
+            run = true;
         }
+    }
+
+    void OnCollisionExit2D(Collision2D other) {
+        if (other.gameObject.tag == "Enemy") {
+            run = false;
+        }
+    }
+
+    IEnumerator Loop2() {
+        running2 = true;
+
+        yield return new WaitForSeconds(1);
+        health -= 10;
+
+        running2 = false;
     }
 }
